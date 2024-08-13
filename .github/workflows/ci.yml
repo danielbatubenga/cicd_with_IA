@@ -59,8 +59,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+        
+      - name: Install dependencies
+        run: npm install
 
       - name: Review code with ChatGPT
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: node scripts/code-review.js src
+        run: node code-review.js src/index.js
