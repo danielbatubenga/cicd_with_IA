@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS products (
+  id SERIAL PRIMARY KEY,
+  category VARCHAR(50),
+  name VARCHAR(100),
+  quantity INTEGER DEFAULT 0,
+  price DECIMAL(10, 2) DEFAULT 0.00
+);
