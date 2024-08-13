@@ -44,4 +44,13 @@ jobs:
           DATABASE_URL: postgres://user:password@localhost:5432/productsdb
         run: npm test
 
+  code-review:
+    runs-on: ubuntu-latest
+    steps:
+    - name: ChatGPT CodeReviewer - Repo Racers Pro Support
+        # You may pin to the exact commit or the version.
+        # uses: repo-racers/gpt-codereview-action@cffc4ca51829cfbdb33660c2383f39a3f062a2d2
+      uses: repo-racers/gpt-codereview-action@v0.0.1
+                
+
      
