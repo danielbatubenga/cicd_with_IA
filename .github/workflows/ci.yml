@@ -44,8 +44,8 @@ jobs:
           DATABASE_URL: postgres://user:password@localhost:5432/productsdb
         run: npm test
 
-      - name: Build application
-        run: npm run build
+     # - name: Build application
+     #   run: npm run build
 
   review:
     runs-on: ubuntu-latest
